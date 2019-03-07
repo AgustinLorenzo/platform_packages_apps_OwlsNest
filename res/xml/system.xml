@@ -46,7 +46,7 @@
 
     <Preference 
         android:key="wakelock_blocker" 
-        android:fragment=" com.aosip.owlsnest.advanced.WakeLockBlocker" 
+        android:fragment="com.aosip.owlsnest.advanced.WakeLockBlocker" 
         android:title="@string/wakelock_blocker_title" 
         android:summary="@string/wakelock_blocker_summary" />
 
