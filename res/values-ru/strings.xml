@@ -46,9 +46,6 @@
     <string name="battery_category">Батарея</string>
     <string name="status_bar_tuner_title">Значки в строке состояния</string>
     <string name="status_bar_tuner_summary">Изменить значки в строке состояния и настройки</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Индикатор роуминга</string>
-    <string name="roaming_indicator_icon_summary">Отображать индикатор роуминга в значке сети в роуминге</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Значок VoLTE</string>
     <string name="volte_icon_summary">Показывать значок VoLTE</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">Время и дата</string>
     <string name="status_bar_clock_summary">Настройка отображения даты и времени</string>
     <string name="clock_title_enable">Выравнивание</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Выключено</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Управление воспроизведением</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие на кнопки громкости переключает композиции</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Управление громкостью звонка</string>
+    <string name="volume_keys_control_ring_tone_summary">По умолчанию клавиши управляют громкостью мультимедиа. Включите, чтобы управлять громкостью мелодии звонка.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ на звонок кнопками регулировки громкости</string>
     <string name="volume_answer_call_summary">Ответ на звонок, когда нажата кнопка громкости</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">Простое затухание</string>
-    <string name="screen_off_animation_color">Затухание цвета</string>
     <string name="screen_off_animation_crt">Эффект телевизора</string>
     <string name="screen_off_animation_scale">Масштабирование</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +326,11 @@
     <string name="active_edge_title">Активные стороны</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Действие после Сжатия</string>
+    <string name="active_edge_long_squeeze_actions_title">Действие по долгому сжиманию</string>
     <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
     <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
     <string name="active_edge_wake_summary">Запустить действие, когда экран выключен</string>
     <string name="active_edge_footer_info">Не все действия Сжатия, функции Активные стороны, имеют функцию включить экран</string>
-    <string name="action_nothing">Нет действия</string>
-    <string name="action_menu">Меню</string>
-    <string name="action_app_switch">Недавние приложения</string>
-    <string name="action_search">Помощник</string>
-    <string name="action_voice_search">Голосовой поиск</string>
-    <string name="action_launch_camera">Камера</string>
-    <string name="action_last_app">Последнее приложение</string>
-    <string name="action_splitscreen">Разделение экрана</string>
-    <string name="action_flashlight">Фонарик</string>
-    <string name="action_clear_notifications">Очистить уведомления</string>
-    <string name="action_volume_panel">Панель громкости</string>
-    <string name="action_screen_off">Отключить экран</string>
-    <string name="action_notifications">Уведомления</string>
-    <string name="action_power_menu">Меню кнопки питания</string>
-    <string name="action_screenshot">Скриншот</string>
-    <string name="action_qs_panel">Панель быстрых настроек</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
     <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
-    <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
+    <string name="lockscreen_visualizer_category">Визуализатор</string>
+    <string name="lockscreen_visualizer_title">Визуализатор на экране болкировки</string>
+    <string name="lockscreen_visualizer_summary">Показывать визуализацию музыки на экране блокировки во время воспроизведения</string>
+    <string name="lockscreen_visualizer_enable_custom">Использовать свой цвет</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Использовать свой цвет вместо сгенерированного</string>
+    <string name="lockscreen_visualizer_custom_color">Цвет визуализатора</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Визуализация на Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Показывать визуализацию музыки на Ambient Display</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Виджет часов</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Аналоговые (du)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>

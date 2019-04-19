@@ -46,9 +46,6 @@
     <string name="battery_category">배터리</string>
     <string name="status_bar_tuner_title">상태 표시줄 항목</string>
     <string name="status_bar_tuner_summary">상태 표시줄 아이콘과 옵션을 수정합니다</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">로밍 상태 표시</string>
-    <string name="roaming_indicator_icon_summary">로밍 모드에서 신호 아이콘에 로밍 표시기를 나타냅니다</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE 아이콘</string>
     <string name="volte_icon_summary">VoLTE 아이콘 표시</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">시간 및 날짜</string>
     <string name="status_bar_clock_summary">상태 표시줄 시계와 날짜 외관 설정</string>
     <string name="clock_title_enable">시계 위치</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">활성화됨</string>
     <string name="clock_disabled">비활성화됨</string>
     <string name="status_bar_clock_style_reset">색 초기화</string>
@@ -261,7 +262,7 @@
     <string name="button_backlight_on_touch_only_summary">버튼 백라이트가 버튼을 누르는 경우에만 나타납니다. 시간 제한은 여전히 이 기능에 영향을 줍니다.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">하드웨어 버튼</string>
-    <string name="buttons_summary">물리 버튼의 반응을 조정합니다</string>
+    <string name="buttons_summary">물리 버튼의 동작을 조정합니다</string>
     <string name="powermenu_category">전원</string>
     <string name="volume_category">음량</string>
     <!-- Power Menu -->
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">재생 컨트롤</string>
     <string name="volume_rocker_music_controls_summary">화면이 꺼져있을 때 음량 버튼을 길게 눌러 음악 재생 순서를 변경합니다.</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">벨소리 볼륨 조정</string>
+    <string name="volume_keys_control_ring_tone_summary">버튼을 누르면 기본적으로 미디어 조정 슬라이더가 뜹니다. 벨소리 슬라이더로 바꾸려면 활성화하세요.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">볼륨 버튼 응답</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러서 전화를 받습니다</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">화면 꺼짐 애니메이션</string>
     <string name="screen_off_animation_fade">단순 페이드</string>
-    <string name="screen_off_animation_color">컬러 페이드</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">스케일</string>
     <!--Owlsnest recentscreen-->
@@ -316,33 +319,18 @@
     <string name="recents_clear_all_location_bottom_center">하단 중앙</string>
     <!--Owlsnest Gestures-->
     <string name="gesture_category">제스처</string>
-    <string name="gesture_summary">옵션/액션에 따른 제스처</string>
+    <string name="gesture_summary">옵션/동작에 따른 제스처</string>
     <string name="double_tap_options">두 번 눌러서 끄기</string>
     <string name="aosp_gesture_title">AOSP 제스처</string>
     <!-- Active edge -->
     <string name="active_edge_title">액티브 엣지</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
-    <string name="active_edge_actions_title">스퀴즈 액션</string>
+    <string name="active_edge_summary">픽셀 쥐기 기능의 고급 버전입니다</string>
+    <string name="active_edge_actions_title">쥐는 동작</string>
+    <string name="active_edge_long_squeeze_actions_title">길게 쥐는 동작</string>
     <string name="active_edge_sensitivity_title">쥐는 민감도</string>
     <string name="active_edge_wake_title">화면 꺼짐에도 허용</string>
-    <string name="active_edge_wake_summary">화면이 꺼져있을 때 액션 트리거</string>
-    <string name="active_edge_footer_info">액티브 엣지의 모든 쥐는 액션이 디스플레이를 활성화 할 수 있는 것은 아닙니다</string>
-    <string name="action_nothing">동작 없음</string>
-    <string name="action_menu">메뉴</string>
-    <string name="action_app_switch">최근 앱 목록</string>
-    <string name="action_search">어시스턴트</string>
-    <string name="action_voice_search">음성 검색</string>
-    <string name="action_launch_camera">카메라</string>
-    <string name="action_last_app">마지막으로 사용한 앱</string>
-    <string name="action_splitscreen">화면 분할</string>
-    <string name="action_flashlight">손전등</string>
-    <string name="action_clear_notifications">알림 지우기</string>
-    <string name="action_volume_panel">볼륨 패널</string>
-    <string name="action_screen_off">화면 끄기</string>
-    <string name="action_notifications">알림</string>
-    <string name="action_power_menu">전원 메뉴</string>
-    <string name="action_screenshot">스크린샷</string>
-    <string name="action_qs_panel">빠른 설정 패널</string>
+    <string name="active_edge_wake_summary">화면이 꺼져있을 때 동작 트리거</string>
+    <string name="active_edge_footer_info">액티브 엣지의 모든 쥐는 동작이 디스플레이를 활성화 할 수 있는 것은 아닙니다</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">세 손가락 제스처</string>
     <string name="three_finger_gesture_summary">세 손가락으로 밀어서 스크린샷을 찍습니다</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">잠금 화면 바로 가기</string>
     <string name="lock_screen_shortcuts_summary">잠금화면 아래 바로가기 관리</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">음악 시각화</string>
-    <string name="lockscreen_visualizer_summary">잠금 화면의 시각화 토글</string>
+    <string name="lockscreen_visualizer_category">시각화</string>
+    <string name="lockscreen_visualizer_title">잠금 화면 시각화 켜기</string>
+    <string name="lockscreen_visualizer_summary">음악이 재생 중이면 시각화를 잠금 화면에 표시합니다</string>
+    <string name="lockscreen_visualizer_enable_custom">사용자 지정 색상 사용</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">생성된 색상 대신 기존 색상을 사용합니다.</string>
+    <string name="lockscreen_visualizer_custom_color">시각화 색상</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">앰비언트 디스플레이에서 시각화 막대 나타내기</string>
+    <string name="ambient_visualizer_title">앰비언트 뮤직 시각화</string>
     <string name="ambient_visualizer_summary">앰비언트 디스플레이에 시각화 막대를 표시합니다 (덜 불투명함)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">시계 위젯</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">아날로그 (du)</string>
     <string name="lockscreen_clock_selection_sammy">새미</string>
     <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>

@@ -46,9 +46,6 @@
     <string name="battery_category">Baterie</string>
     <string name="status_bar_tuner_title">Položky stavové lišty</string>
     <string name="status_bar_tuner_summary">Upravit ikony stavové lišty a možnosti</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indikátor roamingu</string>
-    <string name="roaming_indicator_icon_summary">V režimu roamingu zobrazit indikátor v ikoně signálu</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Ikona VoLTE</string>
     <string name="volte_icon_summary">Zobrazit ikonu VoLTE</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">Hodiny a datum</string>
     <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
     <string name="clock_title_enable">Zarovnání</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Povoleno</string>
     <string name="clock_disabled">Zakázáno</string>
     <string name="status_bar_clock_style_reset">Obnovit barvu</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Ovládání přehrávání</string>
     <string name="volume_rocker_music_controls_summary">Když je obrazovka vypnutá, dlouhý stisk tlačítka hlasitosti posune na další skladbu</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Ovládání hlasitosti vyzvánění</string>
+    <string name="volume_keys_control_ring_tone_summary">Tlačítka ovládají hlasitost médií ve výchozím nastavení. Povolením přepnete na ovládání hlasitosti vyzvánění.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Přijmout hovor tlačítky hlasitosti</string>
     <string name="volume_answer_call_summary">Přijetí hovoru při stisknutí tlačítek hlasitosti</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
     <string name="screen_off_animation_fade">Jednoduché vyblednutí</string>
-    <string name="screen_off_animation_color">Barevné vyblednutí</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Měřítko</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +324,13 @@
     <string name="aosp_gesture_title">Gesta AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Pokročilá verze funkce zmáčknutím Pixel</string>
     <string name="active_edge_actions_title">Akce při zmáčknutí</string>
+    <string name="active_edge_long_squeeze_actions_title">Akce při dlouhém zmáčknutí</string>
     <string name="active_edge_sensitivity_title">Citlivost zmáčknutí</string>
     <string name="active_edge_wake_title">Povolit při vypnuté obrazovce</string>
     <string name="active_edge_wake_summary">Spuštění akce při vypnuté obrazovce</string>
     <string name="active_edge_footer_info">Ne všechny akce zmáčknutím v Active Edge mají schopnost aktivovat obrazovku</string>
-    <string name="action_nothing">Žádná akce</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Nedávné</string>
-    <string name="action_search">Asistent</string>
-    <string name="action_voice_search">Hlasové vyhledávání</string>
-    <string name="action_launch_camera">Fotoaparát</string>
-    <string name="action_last_app">Poslední aplikace</string>
-    <string name="action_splitscreen">Rozdělená obrazovka</string>
-    <string name="action_flashlight">Svítilna</string>
-    <string name="action_clear_notifications">Vymazat oznámení</string>
-    <string name="action_volume_panel">Panel hlasitosti</string>
-    <string name="action_screen_off">Vypnout obrazovku</string>
-    <string name="action_notifications">Oznámení</string>
-    <string name="action_power_menu">Menu napájení</string>
-    <string name="action_screenshot">Snímek obrazovky</string>
-    <string name="action_qs_panel">Panel QS</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto třemi prsty</string>
     <string name="three_finger_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">Zkratky na zamykací obrazovce</string>
     <string name="lock_screen_shortcuts_summary">Nastavit dolní zkratky zamykací obrazovky</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
-    <string name="lockscreen_visualizer_summary">Přepne zobrazení vizualizací na zamykací obrazovce</string>
+    <string name="lockscreen_visualizer_category">Vizualizér</string>
+    <string name="lockscreen_visualizer_title">Povolit vizualizér na zamykací obrazovce</string>
+    <string name="lockscreen_visualizer_summary">Zobrazit vizualizér na zamykací obrazovce při přehrávání hudby</string>
+    <string name="lockscreen_visualizer_enable_custom">Použít vlastní barvu</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Použít přednastavenou barvu namísto barvy generované</string>
+    <string name="lockscreen_visualizer_custom_color">Barva vizualizéru</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Zobrazit LS vizualizér na Ambientním displeji</string>
+    <string name="ambient_visualizer_title">Vizualizér okolní hudby</string>
     <string name="ambient_visualizer_summary">Zobrazuje vizualizační panely také na Ambientním displeji (ale méně průhledné)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget hodin</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analogové (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odemčení pomocí obličeje</string>
     <string name="face_auto_unlock_summary">Odstraní zamykací obrazovku po odemknutí obličejem</string>

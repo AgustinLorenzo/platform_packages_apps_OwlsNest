@@ -14,33 +14,33 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.statusbar;
+package com.aosip.owlsnest.lockscreen;
 
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IconsCategory extends SettingsPreferenceFragment implements
+public class LockVisualizerCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String KEY_HIDE_NOTCH = "statusbar_hide_notch";
-    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
+    private static final String LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR = "lock_screen_visualizer_custom_color";
 
-    private SwitchPreference mShowKronicLogo;
+    private ColorPickerPreference mVisualizerColor;
 
     @Override
     public int getMetricsCategory() {
@@ -50,24 +50,18 @@ public class IconsCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.lock_visualizer);
+	    ContentResolver resolver = getActivity().getContentResolver();
 
-        addPreferencesFromResource(R.xml.icons);
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        final String displayCutout = getResources().getString(
-                com.android.internal.R.string.config_mainBuiltInDisplayCutout);
-        if(displayCutout.isEmpty()) {
-            final Preference hideNotchPref =
-                (Preference) getPreferenceScreen().findPreference(KEY_HIDE_NOTCH);
-            getPreferenceScreen().removePreference(hideNotchPref);
-        }
-
-        mShowKronicLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
-        mShowKronicLogo.setChecked((Settings.System.getInt(getContentResolver(),
-             Settings.System.STATUS_BAR_LOGO, 0) == 1));
-        mShowKronicLogo.setOnPreferenceChangeListener(this);
-
+        // Visualizer custom color
+        mVisualizerColor = (ColorPickerPreference) findPreference(LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR);
+        int visColor = Settings.System.getInt(resolver,
+                Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, 0xff1976D2);
+        String visColorHex = String.format("#%08x", (0xff1976D2 & visColor));
+        mVisualizerColor.setSummary(visColorHex);
+        mVisualizerColor.setNewPreviewColor(visColor);
+        mVisualizerColor.setAlphaSliderEnabled(true);
+        mVisualizerColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -75,12 +69,16 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if  (preference == mShowKronicLogo) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
-            return true;
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+		ContentResolver resolver = getActivity().getContentResolver();
+	    if (preference == mVisualizerColor) {
+			String hex = ColorPickerPreference.convertToARGB(
+			Integer.valueOf(String.valueOf(newValue)));
+			int intHex = ColorPickerPreference.convertToColorInt(hex);
+			Settings.System.putInt(resolver,
+			Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, intHex);
+			preference.setSummary(hex);
+			return true;
         }
         return false;
     }
@@ -95,7 +93,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
                         boolean enabled) {
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                      final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.icons;
+                    sir.xmlResId = R.xml.lock_visualizer;
                     result.add(sir);
                     return result;
                 }

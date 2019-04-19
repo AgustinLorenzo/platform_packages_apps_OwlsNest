@@ -46,9 +46,6 @@
     <string name="battery_category">Batería</string>
     <string name="status_bar_tuner_title">Elementos de la barra de estado</string>
     <string name="status_bar_tuner_summary">Editar los iconos de la barra de estado</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Icono de Roaming</string>
-    <string name="roaming_indicator_icon_summary">Mostrar el icono de Roaming cuando se esté conectado mediante este modo</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icono de VoLTE</string>
     <string name="volte_icon_summary">Mostrar el icono VoLTE</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">Reloj y fecha</string>
     <string name="status_bar_clock_summary">Configurar el reloj de la barra de estado y la apariencia de la fecha</string>
     <string name="clock_title_enable">Alineación</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Deshabilitado</string>
     <string name="status_bar_clock_style_reset">Restablecer color</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Control de reproducción</string>
     <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, al presionar prolongadamente las teclas de volumen buscarán pistas de música</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Responder con las teclas de volumen</string>
     <string name="volume_answer_call_summary">Responder a la llamada cuando se presionen las teclas de volumen</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Pantalla de animación</string>
     <string name="screen_off_animation_fade">Atenuación simple</string>
-    <string name="screen_off_animation_color">Atenuación de color</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Escala</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +326,11 @@
     <string name="active_edge_title">Borde activo</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Acción de apretar</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Sensibilidad al apretar</string>
     <string name="active_edge_wake_title">Permitir cuando la pantalla esté apagada</string>
     <string name="active_edge_wake_summary">Activar una acción cuando la pantalla esté apagada</string>
     <string name="active_edge_footer_info">No todas las acciones de compresión dentro del borde activo tienen la capacidad de activar la pantalla</string>
-    <string name="action_nothing">Ninguna acción</string>
-    <string name="action_menu">Menú</string>
-    <string name="action_app_switch">Recientes</string>
-    <string name="action_search">Asistente</string>
-    <string name="action_voice_search">Búsqueda por voz</string>
-    <string name="action_launch_camera">Cámara</string>
-    <string name="action_last_app">Última aplicación</string>
-    <string name="action_splitscreen">Pantalla dividida</string>
-    <string name="action_flashlight">Linterna</string>
-    <string name="action_clear_notifications">Borrar notificaciones</string>
-    <string name="action_volume_panel">Panel de volumen</string>
-    <string name="action_screen_off">Apagar pantalla</string>
-    <string name="action_notifications">Notificaciones</string>
-    <string name="action_power_menu">Menú de apagado</string>
-    <string name="action_screenshot">Captura de pantalla</string>
-    <string name="action_qs_panel">Panel de ajustes rápidos</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto de tres dedos</string>
     <string name="three_finger_gesture_summary">Deslizar tres dedos para hacer una captura de pantalla</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">Accesos directos</string>
     <string name="lock_screen_shortcuts_summary">Edita los accesos directos de la pantalla de bloqueo</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualizador de música</string>
-    <string name="lockscreen_visualizer_summary">Alterna la visualización del visualizador en la pantalla de bloqueo</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Mostrar barras de visualización en la pantalla ambiental</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Muestra las barras de visualización en la pantalla ambiente (pero menos opacas)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget del reloj</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrita)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueo automático de cara</string>
     <string name="face_auto_unlock_summary">Descartar pantalla de bloqueo después de desbloquear la cara</string>

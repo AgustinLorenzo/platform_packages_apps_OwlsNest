@@ -46,9 +46,6 @@
     <string name="battery_category">Batterie</string>
     <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
     <string name="status_bar_tuner_summary">Editer les icônes et les options de la barre d\'état</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indicateur d\'itinérance</string>
-    <string name="roaming_indicator_icon_summary">Afficher l\'indicateur d\'itinérance dans l\'icône du signal lorsque celle-ci est active</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icône VoLTE</string>
     <string name="volte_icon_summary">Afficher l\'icône VoLTE</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">Horloge et date</string>
     <string name="status_bar_clock_summary">Configurer l\'apparence de l\'horloge et de la date dans la barre d\'état</string>
     <string name="clock_title_enable">Alignement</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
@@ -260,7 +261,7 @@
     <string name="button_backlight_on_touch_only_title">Rétroéclairage bouttons tactiles</string>
     <string name="button_backlight_on_touch_only_summary">Le rétroéclairage des boutons se déclenchera uniquement lorsque ceux-ci seront pressés plutôt que tout le temps. Le délai s\'applique sur cette fonction.</string>
     <!--Owlsnest buttons-->
-    <string name="buttons_title">Boutons du volume</string>
+    <string name="buttons_title">Boutons physiques</string>
     <string name="buttons_summary">Ajustez les actions des boutons physiques de vos appareils</string>
     <string name="powermenu_category">Alimentation</string>
     <string name="volume_category">Volume</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
     <string name="volume_rocker_music_controls_summary">Lorsque l\'écran est éteint, appuyez longuement sur les touches de volume va chercher des morceaux de musique</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Contrôle du volume de la sonnerie</string>
+    <string name="volume_keys_control_ring_tone_summary">Les touches contrôlent le curseur de média par défaut. Activer pour passer au curseur de la sonnerie.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Décrocher par les touches de volume</string>
     <string name="volume_answer_call_summary">Répondre à l’appel lors de l\'appui des touches de volume</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animation précédant l\'extinction de l\'écran</string>
     <string name="screen_off_animation_fade">Fondu simple</string>
-    <string name="screen_off_animation_color">Fondu de couleur</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Echelle</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +324,13 @@
     <string name="aosp_gesture_title">Gestes AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Une version avancée de la fonctionnalité Pixel compressée</string>
     <string name="active_edge_actions_title">Action de secousse</string>
+    <string name="active_edge_long_squeeze_actions_title">Action par appui prolongé</string>
     <string name="active_edge_sensitivity_title">Sensibilité de la secousse</string>
     <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>
     <string name="active_edge_wake_summary">Déclencher une action lorsque l\'écran est éteint</string>
     <string name="active_edge_footer_info">Toutes les actions de secousse dans Active Edge ne permettent pas d\'activer l\'affichage</string>
-    <string name="action_nothing">Aucune action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Applications récentes</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Recherche vocale</string>
-    <string name="action_launch_camera">Appareil photo</string>
-    <string name="action_last_app">Dernière application</string>
-    <string name="action_splitscreen">Partager l\'écran</string>
-    <string name="action_flashlight">Lampe de poche</string>
-    <string name="action_clear_notifications">Supprimer les notifications</string>
-    <string name="action_volume_panel">Panneau de volume</string>
-    <string name="action_screen_off">Écran éteint</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Menu Marche/Arrêt</string>
-    <string name="action_screenshot">Capture d\'écran</string>
-    <string name="action_qs_panel">Panneau des réglages rapides</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Geste avec trois doigts</string>
     <string name="three_finger_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran de verrouillage</string>
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis du bas de l\'écran de verrouillage</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Spectre musical</string>
-    <string name="lockscreen_visualizer_summary">Active/désactive l\'affichage du visualiseur sur l\'écran de verrouillage</string>
+    <string name="lockscreen_visualizer_category">Visualiseur</string>
+    <string name="lockscreen_visualizer_title">Activer le visualiseur sur l\'écran de verrouillage</string>
+    <string name="lockscreen_visualizer_summary">Afficher le visualiseur sur l\'écran de verrouillage pendant la lecture de la musique</string>
+    <string name="lockscreen_visualizer_enable_custom">Utiliser une couleur personnalisée</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Utiliser une couleur prédéfinie au lieu d\'une couleur générée</string>
+    <string name="lockscreen_visualizer_custom_color">Couleur du visualiseur</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Afficher LS Visualize sur Ambient Display</string>
+    <string name="ambient_visualizer_title">Visualiseur de l\'affichage ambiant</string>
     <string name="ambient_visualizer_summary">Affiche les barres de visualisation également sur un affichage ambiant (mais moins opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget horloge</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analogique (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Déverrouillage automatique par reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Ne pas afficher l\'écran de verrouillage après reconnaissance faciale</string>

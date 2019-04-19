@@ -41,18 +41,13 @@
         android:summary="@string/media_art_summary"
         android:defaultValue="true" />
 
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_visualizer"
-        android:title="@string/lockscreen_visualizer_title"
-        android:summary="@string/lockscreen_visualizer_summary"
-        android:defaultValue="false"/>
-
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
-        android:key="ambient_visualizer"
-        android:title="@string/ambient_visualizer_title"
-        android:summary="@string/ambient_visualizer_summary"
-        android:dependency="lockscreen_visualizer"
-        android:defaultValue="false"/>
+    <com.aosip.owlsnest.preference.SystemSettingListPreference
+        android:key="lockscreen_album_art_filter"
+        android:title="@string/lockscreen_cover_filter_title"
+        android:entries="@array/lockscreen_cover_filter_entries"
+        android:entryValues="@array/lockscreen_cover_filter_values"
+        android:dependency="lockscreen_media_metadata"
+        android:defaultValue="0" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="lockscreen_clock"

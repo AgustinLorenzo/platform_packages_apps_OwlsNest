@@ -46,9 +46,6 @@
     <string name="battery_category">Akku</string>
     <string name="status_bar_tuner_title">Statusleisten-Symbole</string>
     <string name="status_bar_tuner_summary">Ändern der Statusleistensymbole und Einstellungen</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming-Indikator</string>
-    <string name="roaming_indicator_icon_summary">Den Roaming-Indikator anzeigen, wenn man im Roamingmodus ist</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE-Symbol</string>
     <string name="volte_icon_summary">VoLTE-Symbol anzeigen</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">Datum und Uhrzeit</string>
     <string name="status_bar_clock_summary">Uhrzeit und Datum der Statusbar einstellen</string>
     <string name="clock_title_enable">Ausrichtung</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
     <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Musiksteuerung</string>
     <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm wird durch langes Drücken der Lautstärketaste der Musiktitel gewechselt</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Klingelton Lautstärke kontrollieren</string>
+    <string name="volume_keys_control_ring_tone_summary">Die Tasten steuern standardmäßig die Medienlautstärke. Aktivieren, um die Klingelton-Lautstärke zu steuern.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Gesprächsannahme mit Lautstärke-Tasten</string>
     <string name="volume_answer_call_summary">Anruf mit den Lautstärketasten annehmen</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Stil der Abschaltanimation</string>
     <string name="screen_off_animation_fade">Einfaches verblassen</string>
-    <string name="screen_off_animation_color">Farbig verblassen</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Maßstab</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +326,11 @@
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">Keine Aktion</string>
-    <string name="action_menu">Menü</string>
-    <string name="action_app_switch">Anwendungsverlauf</string>
-    <string name="action_search">Assistent</string>
-    <string name="action_voice_search">Sprachsuche</string>
-    <string name="action_launch_camera">Kamera</string>
-    <string name="action_last_app">Letzte App</string>
-    <string name="action_splitscreen">Geteilter Bildschirm</string>
-    <string name="action_flashlight">Taschenlampe</string>
-    <string name="action_clear_notifications">Benachrichtigungen löschen</string>
-    <string name="action_volume_panel">Lautstärkeregler</string>
-    <string name="action_screen_off">Bildschirm aus</string>
-    <string name="action_notifications">Benachrichtigungen</string>
-    <string name="action_power_menu">Powermenü</string>
-    <string name="action_screenshot">Bildschirmfoto</string>
-    <string name="action_qs_panel">Schnelleinstellungen</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Drei-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Wische mit drei Fingern für Screenshot</string>
@@ -361,10 +349,14 @@
     <string name="lock_screen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
     <string name="lock_screen_shortcuts_summary">Sperrbildschirm-Verknüpfungen verwalten</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
-    <string name="lockscreen_visualizer_summary">Zeigt Musikvisualisierung auf dem Sperrbildschirm</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Zeige LS Visualisierer auf Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Zeigt die Visualisierungsbalken auch auf dem Ambient Display (weniger intensiv)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Uhr-Widget</string>
@@ -379,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Entsperren per Gesichtserkennung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtserkennung automatisch übergehen</string>

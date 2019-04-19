@@ -46,9 +46,6 @@
     <string name="battery_category">電池</string>
     <string name="status_bar_tuner_title">狀態列圖示</string>
     <string name="status_bar_tuner_summary">修改狀態列圖示和設定</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">漫遊指示計</string>
-    <string name="roaming_indicator_icon_summary">在訊號區域顯示漫遊圖示</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE 圖示</string>
     <string name="volte_icon_summary">顯示 VoLTE 圖示</string>
@@ -57,6 +54,10 @@
     <string name="status_bar_clock">時鐘與日期</string>
     <string name="status_bar_clock_summary">配置狀態列時鐘和日期外觀</string>
     <string name="clock_title_enable">對齊</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">已啟用</string>
     <string name="clock_disabled">已禁用</string>
     <string name="status_bar_clock_style_reset">重設顏色</string>
@@ -281,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">播放控制</string>
     <string name="volume_rocker_music_controls_summary">螢幕關閉時，長按音量鍵即可切換曲目</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量鍵接聽</string>
     <string name="volume_answer_call_summary">按下音量鍵時接聽電話</string>
@@ -292,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">螢幕關閉動畫</string>
     <string name="screen_off_animation_fade">簡單的淡入淡出</string>
-    <string name="screen_off_animation_color">有顏色的淡入淡出</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">縮放</string>
     <!--Owlsnest recentscreen-->
@@ -324,26 +327,11 @@
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Allow when screen is off</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">三指手勢</string>
     <string name="three_finger_gesture_summary">同時滑動三支手指以擷取螢幕畫面</string>
@@ -362,10 +350,14 @@
     <string name="lock_screen_shortcuts_title">鎖定螢幕捷徑</string>
     <string name="lock_screen_shortcuts_summary">管理鎖定螢幕底部的捷徑</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">音樂視覺化</string>
-    <string name="lockscreen_visualizer_summary">在鎖定畫面上切換視覺化檢視</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>
@@ -380,6 +372,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">臉部自動解鎖</string>
     <string name="face_auto_unlock_summary">解除鎖定畫面後的臉部解鎖</string>
