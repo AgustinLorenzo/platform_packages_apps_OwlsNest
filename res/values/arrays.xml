@@ -28,6 +28,7 @@
 
     <string-array name="entries_status_bar_battery" translatable="false">
         <item>@string/status_bar_battery_style_port</item>
+        <item>@string/status_bar_battery_style_q</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_text</item>
@@ -36,6 +37,7 @@
 
     <string-array name="values_status_bar_battery" translatable="false">
         <item>0</item>
+        <item>5</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -49,6 +51,10 @@
         <item>@string/lockscreen_clock_selection_analog</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_bold</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_alt_bold</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -57,6 +63,10 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
     </string-array>
 
     <!-- Lockscreen cover art filter -->
@@ -197,6 +207,17 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Network Traffic View Placement -->
+    <string-array name="network_traffic_location_entries" translatable="false">
+        <item>@string/network_traffic_statusbar</item>
+        <item>@string/network_traffic_header</item>
+    </string-array>
+
+    <string-array name="network_traffic_location_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
     </string-array>
 
     <!-- Tiles animation style -->
