@@ -32,7 +32,7 @@
         android:summary="@string/show_cpu_info_summary" 
         android:defaultValue="false" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"

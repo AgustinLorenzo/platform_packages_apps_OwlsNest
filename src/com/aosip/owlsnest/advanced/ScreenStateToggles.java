@@ -38,7 +38,7 @@ import android.os.UserManager;
 import android.preference.PreferenceManager;
 
 import com.android.settings.R;
-import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+import com.aosip.support.preference.CustomSeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
