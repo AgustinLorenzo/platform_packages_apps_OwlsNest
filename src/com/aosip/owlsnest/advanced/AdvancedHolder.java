@@ -83,9 +83,6 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new SystemCategory();
             frags[1] = new SmartPixels();
-            frags[2] = new AlarmBlocker();
-            frags[3] = new ScreenStateToggles();
-			frags[4] = new WakeLockBlocker();
         }
 
         @Override
@@ -108,10 +105,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.system_category),
-                    getString(R.string.smart_pixels_title),
-                    getString(R.string.alarm_blocker),
-                    getString(R.string.screen_state_toggles_title),
-					getString(R.string.wakelock_blocker_title)};
+                    getString(R.string.smart_pixels_title)};
         return titleString;
     }
 }
