@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">システム UI の再起動が必要です</string>
     <string name="systemui_restart_message">全ての変更を反映するにはシステム UI の再起動が必要です。再起動しますか?</string>
+    <string name="theme_category_title">テーマのオプション</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">ステータスバー</string>
     <string name="statusbar_bar_summary">ステータスバーの様々な要素を設定する</string>
@@ -130,7 +131,7 @@
     <string name="show_carrier_enabled">両方で表示</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">通信速度</string>
-    <string name="network_traffic_state_title">通信速度の表示</string>
+    <string name="network_traffic_state_title">通信速度</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時に通信速度を非表示にする</string>
     <string name="network_traffic_autohide_threshold_title">自動非表示にするしきい値 (KB/s)</string>
@@ -416,7 +417,7 @@
     <string name="force_ambient_for_media_pref_title">アンビエント音楽ティッカー</string>
     <string name="force_ambient_for_media_pref_summary">アンビエント音楽ティッカーを設定する</string>
     <string name="ambient_ticker_footer">アンビエント音楽ティッカーはロック画面とアンビエント表示内で再生中の楽曲情報を表示します。\n\n新しいトラックが開始された時にアンビエント表示が無効になっていると画面中央に楽曲情報が表示されます。\n\n楽曲情報をダブルタップして曲をスキップすることもできます。\n\nPixel 端末 (第2世代より上)を所有し、システムの音楽設定で Now Playing と通知を有効にすると、アンビエント音楽ティッカーもその中で機能します。</string>
-    <string name="force_ambient_for_media_title">ロック画面に音楽ティッカーを表示</string>
+    <string name="force_ambient_for_media_title">ロック画面に音楽ティッカー表示</string>
     <string name="ambient_title">アンビエント音楽</string>
     <!-- Media art -->
     <string name="media_art_title">メディアカバーアート</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">テーマのオプション</string>
-    <string name="accent_picker_dialog_title">アクセントカラーを選択する</string>
-    <string name="theme_accent_picker_title">アクセントカラー</string>
-    <string name="theme_accent_picker_summary">システムテーマのアクセントカラーを選択する</string>
     <string name="theme_accent_picker_default">既定</string>
-    <string name="accent_picker_material_colors">マテリアルパレット</string>
-    <string name="accent_picker_custom_colors">ユーザー設定</string>
     <string name="qs_styles_dialog_title">クイック設定タイルスタイルの選択</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">通話中の振動オプション</string>

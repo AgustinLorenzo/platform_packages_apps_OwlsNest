@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Neustart der SystemUI erforderlich</string>
     <string name="systemui_restart_message">Um alle Änderungen anzuwenden ist ein Neustart von SystemUI notwendig. SystemUI jetzt neustarten?</string>
+    <string name="theme_category_title">Themen-Optionen</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusleiste</string>
     <string name="statusbar_bar_summary">Passe diverse Sachen an der Statusleiste an</string>
@@ -203,7 +204,7 @@
     <string name="expanded_category">Erweitert</string>
     <string name="brightness_slider_title">Helligkeitsregler</string>
     <string name="tiles_title">QS-Kacheln</string>
-    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
+    <string name="qs_tile_footer">Um die Anzahl der QS Reihen und Spalten zu ändern, musst du die 3-Punkte-Menü Taste unter der QS-Bearbeitung benutzen.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Schaltfläche \"Adaptive Helligkeit\"</string>
     <string name="tuner_auto_brightness_right">Schaltfläche für adaptive Helligkeit rechts anzeigen</string>
@@ -415,8 +416,8 @@
     <!-- Ambient Music Ticker -->
     <string name="force_ambient_for_media_pref_title">Ambient Musik Ticker</string>
     <string name="force_ambient_for_media_pref_summary">Einstellungen für den Ambient Musik Ticker</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
-    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
+    <string name="ambient_ticker_footer">Ambient Musik Ticker zeigt die Informationen des zurzeit gespielten Titels auf dem Sperrbildschirm und im Ambient Display.\n\nEs wird auch kurz eingeblendet, wenn Ambient Display ausgeschaltet ist.\n\nDoppeltippe, um den nächsten Song abzuspielen.\n\nFalls du einen Pixel (2.Generation oder höher) hast und \"Now Playing\" mit seinen Benachrichtigung in den Audio Einstellungen einschaltest, wird Ambient Musik Ticker auch damit funktionieren.</string>
+    <string name="force_ambient_for_media_title">Musik Ticker im Sperrbildschirm anzeigen</string>
     <string name="ambient_title">Ambient Musik</string>
     <!-- Media art -->
     <string name="media_art_title">Albumcover anzeigen</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Themen-Optionen</string>
-    <string name="accent_picker_dialog_title">Wähle eine Akzentfarbe</string>
-    <string name="theme_accent_picker_title">Akzentfarbe</string>
-    <string name="theme_accent_picker_summary">Wähle eine System-Theme Akzentfarbe</string>
     <string name="theme_accent_picker_default">Standard</string>
-    <string name="accent_picker_material_colors">„Material“-Palette</string>
-    <string name="accent_picker_custom_colors">Benutzerdefiniert</string>
     <string name="qs_styles_dialog_title">Wähle einen Stil für die Kacheln der Schnelleinstellungen</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Vibrationseinstellungen während eines Gesprächs</string>
